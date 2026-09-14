@@ -1,0 +1,8 @@
+[Unit]
+Description=Local MoriCar database and upload backup
+After=docker.service
+
+[Service]
+Type=oneshot
+UMask=0077
+ExecStart=/bin/bash /srv/apps/moricar/scripts/backup-production.sh

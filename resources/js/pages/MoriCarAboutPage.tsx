@@ -1,0 +1,14 @@
+import { ArrowRight, CarFront, Heart, MapPin, ShieldCheck, Sparkles, Users, Wrench } from 'lucide-react'
+import { Link } from 'react-router'
+import roadDay from '../../images/moricar-road-day.png'
+import roadSunset from '../../images/moricar-road-sunset.png'
+
+export function MoriCarAboutPage() {
+  return <div className="mc-page">
+    <section className="mc-page-hero mc-page-hero--about"><div className="mc-shell"><p className="mc-eyebrow">About MoriCar</p><h1>Built for<br />Mauritius, Driven<br /><em>by People.</em></h1><p>MoriCar is a Mauritius-first marketplace that brings together car buyers, sellers and automotive professionals in one trusted platform.</p><div className="mc-hero-actions"><a className="mc-button" href="#mission">Our mission <ArrowRight /></a><Link className="mc-button mc-button--outline" to="/for-sellers">Join our community</Link></div></div></section>
+    <section className="mc-section mc-shell mc-story"><img src={roadSunset} alt="Cars driving near Le Morne" /><div><p className="mc-eyebrow">Local vision, bigger purpose</p><h2>Our story</h2><p>MoriCar was created by MoriStack, a Mauritian tech company, with a clear goal: to support the local automotive ecosystem through a modern, easy-to-use and affordable platform.</p><p>We believe in the power of local businesses and individuals. From first-time sellers to established showrooms, from small garages to specialist professionals, MoriCar gives everyone a space to be seen, trusted and grow.</p></div></section>
+    <section className="mc-stats"><div className="mc-shell"><div><CarFront /><strong>1,000+</strong><span>Cars listed</span></div><div><Wrench /><strong>300+</strong><span>Automotive professionals</span></div><div><Users /><strong>10,000+</strong><span>Happy users</span></div><div><MapPin /><strong>Across Mauritius</strong><span>In every region</span></div></div></section>
+    <section id="mission" className="mc-section mc-shell mc-mission"><div><p className="mc-eyebrow">Connecting people</p><h2>Our mission</h2><p>To create the most trusted and accessible automotive marketplace in Mauritius, where everyone can buy, sell and find reliable automotive services easily, safely and locally.</p><Link className="mc-button" to="/for-sellers">Join MoriCar <ArrowRight /></Link></div><img src={roadDay} alt="Cars on a Mauritius coastal road" /></section>
+    <section className="mc-section mc-section--soft"><div className="mc-shell"><div className="mc-section-title"><div><p className="mc-eyebrow">What drives us</p><h2>Our values</h2></div></div><div className="mc-why-grid"><div><ShieldCheck /><h3>Trust</h3><p>We promote transparency and genuine listings.</p></div><div><Users /><h3>Community</h3><p>We support local talent and businesses.</p></div><div><Sparkles /><h3>Simplicity</h3><p>A platform that stays fair and easy to use.</p></div><div><Heart /><h3>Impact</h3><p>Opportunities for a stronger Mauritius.</p></div></div></div></section>
+  </div>
+}
