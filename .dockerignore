@@ -21,3 +21,6 @@ output
 *.log
 *.tar.gz
 **/*Zone.Identifier*
+
+.github
+tmp
